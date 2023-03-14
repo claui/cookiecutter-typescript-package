@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "declarationDir": "types",
+    "downlevelIteration": true,
+    "esModuleInterop": true,
+    "inlineSources": true,
+    "inlineSourceMap": true,
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "noImplicitAny": true,
+    "outDir": "lib",
+    "skipLibCheck": false,
+    "strictNullChecks": true,
+    "target": "ES6"
+  },
+  "include": [
+    "src"
+ ]
+}

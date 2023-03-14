@@ -1,0 +1,12 @@
+{
+  "project_slug": "",
+  "project_description": "",
+  "project_version": "0.1.0",
+  "project_license": ["Apache-2.0", "Proprietary"],
+  "nodejs_major_version": ["16", "18", "20"],
+  "author_full_name": "",
+  "copyright_holder_full_name": "{{ cookiecutter.author_full_name }}",
+  "npm_registry_username": "",
+  "github_username": "",
+  "install_dependencies_now": "y"
+}

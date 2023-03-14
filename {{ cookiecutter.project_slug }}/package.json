@@ -1,0 +1,48 @@
+{
+  "name": "{{ cookiecutter.project_slug }}",
+  "version": "{{ cookiecutter.project_version }}",
+  "description": "{{ cookiecutter.project_description }}",
+  "author": "{{ cookiecutter.author_full_name }}",
+  "license": "SEE LICENSE IN README.md",
+  "homepage": "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}",
+  "repository": "github:{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}",
+  "engines": {
+    "node": "^{{ cookiecutter.nodejs_major_version }}.0.0"
+  },
+  "files": [
+    "/build/",
+    "/types/"
+  ],
+  "main": "./build/index.js",
+  "types": "./types/index.d.ts",
+  "packageManager": "",
+  "devDependencies": {
+    "@types/jest": "^29.4.1",
+    "@types/node": "^{{ cookiecutter.nodejs_major_version }}.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.53.0",
+    "@typescript-eslint/parser": "^5.53.0",
+    "@yarnpkg/sdks": "^2.6.3",
+    "del-cli": "^5.0.0",
+    "esbuild": "^0.17.10",
+    "eslint": "^8.34.0",
+    "eslint-plugin-jest": "^27.2.1",
+    "jest": "^29.5.0",
+    "semver": "^7.3.8",
+    "source-map-support": "^0.5.21",
+    "ts-jest": "^29.0.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  },
+  "scripts": {
+    "clean": "yarn run -B del build dist lib types",
+    "clean-install": "yarn install && git checkout -- .vscode/settings.json '.yarn/*/LICENSE'",
+    "compile": "yarn run -B tsc && yarn run -B esbuild --bundle --outdir=./build/ --platform=node --sourcemap=inline ./lib/index.js",
+    "lint": "yarn run -B eslint --max-warnings 0 src",
+    "repatch": "git add -- package.json && yarn patch-commit -s \"$1\" && git checkout -- package.json && yarn clean-install",
+    "test": "yarn run -B jest",
+    "upgrade-all": "printf >&2 '%s\\n\\t%s\\n' 'Run the following command line manually:' 'yarn set version stable && yarn install && yarn upgrade-packages' && false",
+    "upgrade-lockfile": "yarn up -R '**' && yarn clean-install",
+    "upgrade-packages": "yarn up '**' && yarn up -R '**' && yarn clean-install",
+    "upgrade-yarn-itself": "printf >&2 '%s\\n\\t%s\\n' 'Run the following command line manually:' 'yarn set version stable && yarn install && yarn clean-install' && false"
+  }
+}

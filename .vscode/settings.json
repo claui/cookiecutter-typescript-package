@@ -1,0 +1,44 @@
+{
+  "[jinja-js]": {
+    "editor.rulers": [
+      80
+    ]
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "files.associations": {
+    "**/?? cookiecutter.project_slug ??/.vscode/*.json": "jsonc",
+    "**/?? cookiecutter.project_slug ??/**/*.json": "jinja-json",
+    "**/?? cookiecutter.project_slug ??/**/*.md": "jinja-md",
+    "**/?? cookiecutter.project_slug ??/**/*.ts": "jinja-js",
+    "**/hooks/*_gen_project.py": "jinja-py"
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.mypy_cache": true,
+    "**/.venv": true,
+    "**/__pycache__": true
+  },
+  "markdownlint.config": {
+    "MD033": false
+  },
+  "python.analysis.typeCheckingMode": "basic",
+  "python.formatting.provider": "black",
+  "python.linting.enabled": true,
+  "python.linting.pylintArgs": [
+    "--enable-all-extensions"
+  ],
+  "python.linting.pylintCategorySeverity.refactor": "Warning",
+  "python.linting.pylintEnabled": true,
+  "python.linting.pylintPath": "pylint"
+}

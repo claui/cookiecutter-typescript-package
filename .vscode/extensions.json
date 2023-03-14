@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "davidanson.vscode-markdownlint",
+    "editorconfig.editorconfig",
+    "ms-python.python",
+    "samuelcolvin.jinjahtml",
+    "tamasfe.even-better-toml"
+  ]
+}
