@@ -10,6 +10,7 @@
     "moduleResolution": "Node",
     "noImplicitAny": true,
     "outDir": "lib",
+    "resolveJsonModule": true,
     "skipLibCheck": false,
     "strictNullChecks": true,
     "target": "ES6"

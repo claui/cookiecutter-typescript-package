@@ -29,6 +29,10 @@
     "**/.venv": true,
     "**/__pycache__": true
   },
+  "jest.autoRun": {
+    ".": false
+  },
+  "jest.jestCommandLine": "/bin/true",
   "markdownlint.config": {
     "MD033": false
   },
