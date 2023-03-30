@@ -16,6 +16,8 @@ overrides:
     parserOptions:
       project:
         - tsconfig.linting.json
+    rules:
+      max-lines-per-function: 0
 parser: "@typescript-eslint/parser"
 parserOptions:
   ecmaFeatures:
