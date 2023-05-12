@@ -1,4 +1,4 @@
-import { hello } from "{{ cookiecutter.project_slug }}";
+import { hello } from "../src/index";
 
 test("prints Hello, world!", () => {
   expect(hello()).toEqual("Hello, world!");

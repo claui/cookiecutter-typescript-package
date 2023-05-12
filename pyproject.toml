@@ -16,7 +16,7 @@ license = "Apache-2.0"
 python = "~3.7.0"
 
 [tool.poetry.group.dev.dependencies]
-black = "^22.6.0"
+black = "^23.3.0"
 #
 # We’re developing a Cookiecutter template, not a Python package.
 # But we’re maintaining a `pyproject.toml` nonetheless because we
@@ -27,7 +27,7 @@ black = "^22.6.0"
 # Keep this in sync with the requirement mentioned in README.md.
 cookiecutter = "~2.1.0"
 mypy = "^1.0.1"
-poethepoet = "^0.16.0"
+poethepoet = "^0.19.0"
 #
 # We’re pinning pylint to a legacy minor version for compatibility
 # with the minimum Python version Cookiecutter supports.
