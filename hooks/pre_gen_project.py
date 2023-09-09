@@ -1,3 +1,4 @@
+# pylint: disable=docstring-first-line-empty
 """
 {# See https://github.com/nodejs/Release/blob/main/CODENAMES.md #}
 {%
