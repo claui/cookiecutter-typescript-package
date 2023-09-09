@@ -10,6 +10,9 @@
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
   "[toml]": {
     "editor.defaultFormatter": "tamasfe.even-better-toml"
   },
@@ -36,13 +39,20 @@
   "markdownlint.config": {
     "MD033": false
   },
-  "python.analysis.typeCheckingMode": "basic",
-  "python.formatting.provider": "black",
-  "python.linting.enabled": true,
-  "python.linting.pylintArgs": [
+  "pylint.args": [
     "--enable-all-extensions"
   ],
-  "python.linting.pylintCategorySeverity.refactor": "Warning",
-  "python.linting.pylintEnabled": true,
-  "python.linting.pylintPath": "pylint"
+  "pylint.path": [
+    "${workspaceFolder}/.venv/bin/pylint"
+  ],
+  "pylint.severity": {
+    "refactor": "Warning"
+  },
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.typeCheckingMode": "basic",
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+  "python.testing.pytestArgs": [
+    "tests"
+  ],
+  "python.testing.pytestEnabled": true,
 }

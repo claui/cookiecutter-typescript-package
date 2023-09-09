@@ -2,6 +2,9 @@
   "recommendations": [
     "davidanson.vscode-markdownlint",
     "editorconfig.editorconfig",
+    "ms-python.black-formatter",
+    "ms-python.mypy-type-checker",
+    "ms-python.pylint",
     "ms-python.python",
     "samuelcolvin.jinjahtml",
     "tamasfe.even-better-toml"
